@@ -38,7 +38,7 @@ function BitcoinRates1() {
                     {options}
                 </select>
             </label>
-            <p>Rate: {rate ? rate : 'Loading...'}</p>
+            <p>1 BTC = {rate} {currency.toUpperCase()}</p>
         </div>
     );
 }
