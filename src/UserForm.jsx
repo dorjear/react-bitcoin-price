@@ -1,5 +1,5 @@
 import React from 'react';
-import {UserProvider, useUser} from './UserContext';
+import {UserProvider} from './UserContext';
 import LoginForm from './LoginForm';
 
 

@@ -36,7 +36,7 @@ function BitcoinRates2() {
             try {
                 const response = await fetch(`https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=${currency}`);
                 const data = await response.json();
-                if(response.status != 200 || !data.bitcoin[currency]) throw new Error(response)
+                if(response.status !== 200 || !data.bitcoin[currency]) throw new Error(response)
                 dispatch({ type: 'FETCH_SUCCESS', payload: data.bitcoin });
             } catch (error) {
                 dispatch({ type: 'FETCH_ERROR' });

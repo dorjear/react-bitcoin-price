@@ -5,7 +5,6 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import LoginForm from './LoginForm'; // Adjust path as necessary
 import BitcoinRates2 from './BitcoinRates-2'; // Adjust path as necessary
 import { UserProvider } from './UserContext';
-import UserForm from "./UserForm"; // Adjust path as necessary
 
 function App() {
     return (
